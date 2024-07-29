@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <table id="cart">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be added here -->
+        </tbody>
+    </table>
+    <br>
+    <a href="catalogue.html">Back to Catalogue</a>
+
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartTable = document.getElementById('cart').getElementsByTagName('tbody')[0];
+
+            cart.forEach(item => {
+                let newRow = cartTable.insertRow();
+
+                let cell1 = newRow.insertCell(0);
+                let cell2 = newRow.insertCell(1);
+                let cell3 = newRow.insertCell(2);
+
+                cell1.innerHTML = item.itemName;
+                cell2.innerHTML = item.author;
+                cell3.innerHTML = item.price;
+            });
+        }
+
+        window.onload = loadCart;
+    </script>
+</body>
+</html>

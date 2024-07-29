@@ -4,101 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Catalogue</h1>
-    <table border="1" width="100%">
-        <tr>
-            <th>Cover Page</th>
-            <th>Author Name</th>
-            <th>Publisher</th>
-            <th>Price</th>
-            <th>Action</th>
+    <table>
+        <thead>
             <tr>
-                <td><img src="intro.jpg" alt="Introduction to Algorithms" style="height: 100px;"></td>
+                <th>Cover Page</th>
+                <th>Author Name</th>
+                <th>Publisher</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="catalogue">
+            <tr>
+                <td><img src="intro.jpg" alt="Introduction to Algorithms"></td>
                 <td>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</td>
                 <td>The MIT Press</td>
                 <td>1000 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Introduction to Algorithms', 'Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein', '1000 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="cn.jpg" alt="Computer Networks" style="height: 100px;"></td>
+                <td><img src="cn.jpg" alt="Computer Networks"></td>
                 <td>Andrew S. Tanenbaum</td>
                 <td>Prentice Hall</td>
                 <td>850 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Computer Networks', 'Andrew S. Tanenbaum', '850 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="introtheory.jpg" alt="Introduction to the Theory of Computation" style="height: 100px;"></td>
+                <td><img src="introtheory.jpg" alt="Introduction to the Theory of Computation"></td>
                 <td>Michael Sipser</td>
                 <td>Cengage Learning</td>
                 <td>1050 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Introduction to the Theory of Computation', 'Michael Sipser', '1050 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="elctro.jpg" alt="Electronic Devices and Circuit Theory" style="height: 100px;"></td>
-                    <td>Robert Boylestad</td>
-                    <td>Pearson</td>
-                    <td>700 Rs</td>
-                    <td><button>Add to Cart</button></td>
+                <td><img src="elctro.jpg" alt="Electronic Devices and Circuit Theory"></td>
+                <td>Robert Boylestad</td>
+                <td>Pearson</td>
+                <td>700 Rs</td>
+                <td><button onclick="addToCart('Electronic Devices and Circuit Theory', 'Robert Boylestad', '700 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="micro.jpg" alt="Microelectronic Circuits" style="height: 100px;"></td>
+                <td><img src="micro.jpg" alt="Microelectronic Circuits"></td>
                 <td>Adel S. Sedra, Kenneth C. Smith</td>
                 <td>Oxford University Press</td>
                 <td>800 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Microelectronic Circuits', 'Adel S. Sedra, Kenneth C. Smith', '800 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="com.jpg" alt="Communication Systems" style="height: 100px;"></td>
+                <td><img src="com.jpg" alt="Communication Systems"></td>
                 <td>Simon Haykin</td>
                 <td>Wiley</td>
                 <td>950 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Communication Systems', 'Simon Haykin', '950 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="measure.jpg" alt="Electrical Engineering: Principles and Applications" style="height: 100px;"></td>
+                <td><img src="measure.jpg" alt="Electrical Engineering: Principles and Applications"></td>
                 <td>John Bentley</td>
                 <td>McGraw-Hill</td>
                 <td>750 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Electrical Engineering: Principles and Applications', 'John Bentley', '750 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="electro.jpg" alt="Electric Machinery and Power System Fundamentals" style="height: 100px;"></td>
+                <td><img src="electro.jpg" alt="Electric Machinery and Power System Fundamentals"></td>
                 <td>Stephen J. Chapman</td>
                 <td>McGraw-Hill</td>
                 <td>800 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Electric Machinery and Power System Fundamentals', 'Stephen J. Chapman', '800 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="electrical.jpg" alt="Electrical Power Systems" style="height: 100px;"></td>
-                <td:C. L. Wadhwa</td>
+                <td><img src="electrical.jpg" alt="Electrical Power Systems"></td>
+                <td>C. L. Wadhwa</td>
                 <td>Wiley</td>
                 <td>900 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Electrical Power Systems', 'C. L. Wadhwa', '900 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="str.jpg" alt="Structural Analysis" style="height: 100px;"></td>
+                <td><img src="str.jpg" alt="Structural Analysis"></td>
                 <td>R.C. Hibbeler</td>
                 <td>Pearson</td>
                 <td>800 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Structural Analysis', 'R.C. Hibbeler', '800 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="design.jpg" alt="Design of Reinforced Concrete" style="height: 100px;"></td>
+                <td><img src="design.jpg" alt="Design of Reinforced Concrete"></td>
                 <td>Jack C. McCormac, James K. Nelson</td>
                 <td>Wiley</td>
                 <td>850 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Design of Reinforced Concrete', 'Jack C. McCormac, James K. Nelson', '850 Rs')">Add to Cart</button></td>
             </tr>
             <tr>
-                <td><img src="build.jpg" alt="Building Construction" style="height: 100px;"></td>
+                <td><img src="build.jpg" alt="Building Construction"></td>
                 <td>W.B. Mckay</td>
                 <td>McGraw-Hill</td>
                 <td>850 Rs</td>
-                <td><button>Add to Cart</button></td>
+                <td><button onclick="addToCart('Building Construction', 'W.B. Mckay', '850 Rs')">Add to Cart</button></td>
             </tr>
-        
+        </tbody>
     </table>
+
+    <script>
+        function addToCart(itemName, author, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ itemName, author, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert("Item added to cart!");
+        }
+    </script>
+    <br>
+    <a href="cart.html">Go to Cart</a>
 </body>
 </html>
