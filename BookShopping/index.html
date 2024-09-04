@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,6 +46,13 @@
             display: block;
             margin-bottom: 10px;
             text-decoration: none;
+            color: black; /* Default text color */
+            padding: 10px; /* Add padding to increase clickable area */
+            border-radius: 3px; /* Optional: rounded corners */
+        }
+        .sidebar a:hover {
+            background-color: blue;
+            color: white; /* Change text color to white for better contrast */
         }
         #rightFrame {
             flex: 1;
@@ -65,7 +73,6 @@
         <span>Online Book Store</span>
     </div>
     <div class="navbar">
-        <a href="welcome.html" target="rightFrame">home</a>
         <a href="login.html" target="rightFrame">Login</a>
         <a href="registration.html" target="rightFrame">Registration</a>
         <a href="catalogue.html" target="rightFrame">Catalogue</a>

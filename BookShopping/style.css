@@ -1,0 +1,229 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Login Page */
+.login-box {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #040404;
+    border-radius: 3px;
+}
+
+.login-box input[type="submit"] {
+    padding: 10px 20px;
+    background-color:black;
+     
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.login-box button[type="Reset"] {
+    padding: 10px 20px;
+    background-color:black;
+     
+    color:white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.login-box button[type="Reset"]:hover {
+    background-color: red;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: green;
+}
+
+/* Registration Page */
+.registration-box {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.registration-box input[type="text"],
+.registration-box input[type="email"],
+.registration-box input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration-box button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #080808;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.registration-box button[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #080808;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.registration-box button[type="submit"]:hover {
+    background-color: green;
+}
+.registration-box button[type="Reset"]:hover {
+    background-color: red;
+}
+
+
+/* Catalogue Page */
+/* Catalogue Page */
+.catalogue-box {
+    max-width: 1000px;
+    margin: 50px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.catalogue-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.catalogue-box th,
+.catalogue-box td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.catalogue-box th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.catalogue-box td img {
+    height: 100px;
+    border-radius: 3px;
+}
+
+.catalogue-box td button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #080808;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.catalogue-box td button:hover {
+    background-color: green;
+}
+
+
+/* Cart Page */
+.cart-box {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.cart-item-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.cart-item-quantity,
+.cart-item-price {
+    text-align: center;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart-checkout {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-checkout button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-checkout button:hover {
+    background-color: #555;
+}
