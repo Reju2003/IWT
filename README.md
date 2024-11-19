@@ -1,5 +1,6 @@
-#WEEKLY BREAKDOWN
--**WEEK 1**:BASIC HTML TAGS
--**WEEK 2**:BOOKSHOPPING
--**WEEK 3**:BOOKSHOPPING -CART PAGE,REGISTRATION PAGE
--**WEEK 4**:
+## Weekly Breakdown
+
+### **Week 1: Basic HTML Tags**
+### **Week 2: Book Shopping**
+### **Week 3: Book Shopping - Cart Page & Registration Page**
+### **Week 4: Coming Soon**
